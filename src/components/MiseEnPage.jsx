@@ -9,7 +9,7 @@ const lien = 'hover:text-primary aria-[current=page]:font-bold aria-[current=pag
 
 // Ce qui est commun à toutes les pages. <Outlet /> marque l'endroit où s'affiche la page demandée.
 export default function MiseEnPage() {
-  const { utilisateur, deconnecter } = useAuth();
+  const { utilisateur, estAdmin, deconnecter } = useAuth();
   const { panier } = usePanier();
 
   return (
@@ -32,6 +32,8 @@ export default function MiseEnPage() {
               </NavLink>
             </li>
             <li><NavLink className={lien} to="/compte">Mon compte</NavLink></li>
+            {estAdmin && <li><NavLink className={lien} to="/admin">Back-
+              office</NavLink></li>}
             {utilisateur && (
               <li>
                 <Button variant="outline" size="sm" onClick={deconnecter}>Se déconnecter</Button>
