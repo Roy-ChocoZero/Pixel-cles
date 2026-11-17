@@ -1,0 +1,65 @@
+/* Pixel Clés : toute l'apparence passe par Tailwind.
+   Ce fichier ne contient que le thème : les couleurs de la boutique, sous forme de variables.
+   Les composants de src/components/ui (shadcn/ui) et vos classes s'en servent :
+   bg-background, text-foreground, bg-primary, text-muted-foreground, border-border… */
+@import "tailwindcss";
+
+:root {
+  --radius: 0.6rem;
+  --background: #111318;
+  --foreground: #eef0f4;
+  --card: #1b1e25;
+  --card-foreground: #eef0f4;
+  --popover: #1b1e25;
+  --popover-foreground: #eef0f4;
+  --primary: #ff6b1a;
+  --primary-foreground: #111318;
+  --secondary: #252933;
+  --secondary-foreground: #eef0f4;
+  --muted: #252933;
+  --muted-foreground: #a3a9b6;
+  --accent: #252933;
+  --accent-foreground: #eef0f4;
+  --destructive: #f87171;
+  --success: #4ade80;
+  --border: #343a46;
+  --input: #343a46;
+  --ring: #ff6b1a;
+  color-scheme: dark;
+}
+
+/* Les variables deviennent des couleurs Tailwind : --primary donne bg-primary, text-primary… */
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}

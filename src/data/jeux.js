@@ -1,0 +1,28 @@
+// Huit jeux, écrits à la main dans le front. Ils disparaîtront quand l'API prendra le relais.
+
+export const jeux = [
+  { id: 'elden-ring', titre: 'Elden Ring', editeur: 'Bandai Namco', annee: 2022, genre: 'Jeu de rôle',
+    plateforme: 'PC', prix: 59.99, remise: 45, disponible: true,
+    description: 'Un monde ouvert immense, des boss redoutables : devenez le seigneur de l’Entre-terre.' },
+  { id: 'hades', titre: 'Hades', editeur: 'Supergiant Games', annee: 2020, genre: 'Action',
+    plateforme: 'Nintendo Switch', prix: 24.99, remise: 40, disponible: true,
+    description: 'Le fils du dieu des Enfers tente de s’en échapper, encore et encore.' },
+  { id: 'hollow-knight', titre: 'Hollow Knight', editeur: 'Team Cherry', annee: 2017, genre: 'Plateforme',
+    plateforme: 'Nintendo Switch', prix: 14.99, remise: 30, disponible: false,
+    description: 'Un petit chevalier explore un royaume d’insectes en ruine.' },
+  { id: 'stardew-valley', titre: 'Stardew Valley', editeur: 'ConcernedApe', annee: 2016, genre: 'Gestion',
+    plateforme: 'PC', prix: 13.99, remise: 20, disponible: true,
+    description: 'Vous héritez de la ferme de votre grand-père : à vous de la faire revivre.' },
+  { id: 'celeste', titre: 'Celeste', editeur: 'Maddy Makes Games', annee: 2018, genre: 'Plateforme',
+    plateforme: 'PC', prix: 19.99, remise: 50, disponible: true,
+    description: 'Madeline gravit une montagne, et affronte ses propres angoisses.' },
+  { id: 'the-witcher-3', titre: 'The Witcher 3 : Wild Hunt', editeur: 'CD Projekt', annee: 2015, genre: 'Jeu de rôle',
+    plateforme: 'PC', prix: 29.99, remise: 75, disponible: true,
+    description: 'Geralt de Riv, chasseur de monstres, part à la recherche de sa fille adoptive.' },
+  { id: 'baldurs-gate-3', titre: 'Baldur’s Gate 3', editeur: 'Larian Studios', annee: 2023, genre: 'Jeu de rôle',
+    plateforme: 'PlayStation 5', prix: 69.99, remise: 15, disponible: true,
+    description: 'Un jeu de rôle tiré de Donjons et Dragons, où chaque choix compte.' },
+  { id: 'portal-2', titre: 'Portal 2', editeur: 'Valve', annee: 2011, genre: 'Réflexion',
+    plateforme: 'PC', prix: 9.99, remise: 80, disponible: true,
+    description: 'Un pistolet à portails, une intelligence artificielle sarcastique, et des énigmes.' },
+];
