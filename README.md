@@ -7,7 +7,7 @@ La boutique en ligne de **Pixel Clés**, en React, Tailwind CSS et shadcn/ui, qu
 | Rôle | Nom | Identifiant GitHub |
 |---|---|---|
 | A · le catalogue | | |
-| B · le compte client et les commandes | | |
+| B · le compte client et les commandes |Damien Bertrand | DarkLittlePony |
 | C · le back-office | | |
 
 Dépôt : *(l'adresse de votre dépôt GitHub)*
