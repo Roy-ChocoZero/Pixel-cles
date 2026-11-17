@@ -6,9 +6,10 @@ La boutique en ligne de **Pixel Clés**, en React, Tailwind CSS et shadcn/ui, qu
 
 | Rôle | Nom | Identifiant GitHub |
 |---|---|---|
-| A · le catalogue | | |
-| B · le compte client et les commandes | | |
-| C · le back-office | Responsable du back-office | Camus Martin | Martin00007 |
+
+| A · le catalogue | ROY Titouan | Roy-ChocoZero |
+| B · le compte client et les commandes |Damien Bertrand | DarkLittlePony |
+| C · le back-office | Camus Martin | Martin00007 |
 
 Dépôt : *(l'adresse de votre dépôt GitHub)*
 
