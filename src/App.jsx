@@ -7,6 +7,8 @@ import FicheJeu from '@/pages/FicheJeu.jsx';
 import Panier from '@/pages/Panier.jsx';
 import Connexion from '@/pages/Connexion.jsx';
 import Compte from '@/pages/Compte.jsx';
+import Admin from '@/pages/Admin.jsx';
+import AjoutJeu from '@/pages/AjoutJeu.jsx';
 import PageIntrouvable from '@/pages/PageIntrouvable.jsx';
 
 // Les adresses de l'application : une route = une adresse = une page.
@@ -25,6 +27,22 @@ export default function App() {
             <RouteProtegee>
               <Compte />
             </RouteProtegee>
+          }
+        />
+        <Route
+          path="admin"
+          element={
+          <RouteProtegee role="admin">
+          <Admin />
+          </RouteProtegee>
+          }
+        />
+        <Route
+          path="admin/nouveau"
+          element={
+          <RouteProtegee role="admin">
+          <AjoutJeu />
+          </RouteProtegee>
           }
         />
         <Route path="*" element={<PageIntrouvable />} />
