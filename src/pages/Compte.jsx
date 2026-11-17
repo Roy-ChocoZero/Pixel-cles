@@ -12,13 +12,12 @@ import { Chargement, Erreur, Refus, Succes } from '@/components/Etat.jsx';
 // « 2026-11-17 » → « 17 novembre 2026 »const dateFr = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'long', timeZone: 'UTC' });
 
 export default function Compte() {
-  const { utilisateur } = useAuth();
+  const { utilisateur,jeton } = useAuth();
   const { panier } = usePanier();
   const { chargement, erreur, donnees: commandes, recharger } = useRequete(
     (signal) => chargerCommandes(utilisateur.id, jeton, signal),
     [utilisateur.id, jeton],
   );
-  const { utilisateur, jeton } = useAuth();
   const [message, setMessage] = useState('');
   const [erreurAction, setErreurAction] = useState('');
   const s = panier.length > 1 ? 'x' : '';
